@@ -39,7 +39,7 @@ The first parameter of each function must have labels unless specified otherwise
   ```
 
 ### Provisioning Profile
-Since I haven't touched my profile for awhile, the provisioning profile somehow became ineligible. Here are the steps.
+Since I haven't touched my project for awhile, the provisioning profile somehow became ineligible. Here are the steps.
 * Go to [developer.apple.com](https://developer.apple.com)
 * Account -> Login
 * If applicable, Agree new agreements or ask the Team agent to do so
