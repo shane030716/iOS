@@ -79,5 +79,16 @@ I think it's some sort of bug on Xcode.
 However, if you check the full message of the error, you will see some lines of codes from one of your files. Usually it's the first line or the last line that is causing the problem. In my case, I have an array of `AnyObject` and I appended a `String`. Since `String` no longer bridges to `NSString` in Swift 3. And it's a struct, not a class, so it does not conform to `AnyObject`.
 But Xcode didn't tell me directly, it just shows "command failed due to signal abort trap: 6" :(
 
+I just changed the array from `[AnyObject]` to `[Any]`
+
 ### @escaping closures
+
+From Apple's Swfit 3 programming guide it says "* **A closure is said to escape a function when the closure is passed as an argument to the function, but is called after the function returns** *"
+
+In other words, the following two cases will get a compile error.
+
+1. Pass the closure to another function (directly or indirectly) which has the parameter marked as `@escaping`
+2. Store the closure to another object, eg: another variable, a property of another object, in a array etc..
+
+Previously, the closure parameters of a function is set to `@escaping` by default, not in Swift 3 anymore.
 
