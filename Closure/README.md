@@ -11,9 +11,9 @@ In other words, in my opinion, the following two cases will get a compile error
 
 Before Swift 3, the closure parameters of a function is set to `@escaping` by default, not anymore in Swift 3. You have to add the attribute `@escaping` to all escaping closure parameters.
 
-**Examples: **
+#### Examples:
 
-1. Store the closure in an array.
+* Store the closure in an array.
 ```
 func storeEscapingClosureToAnArray(completionHandler: @escaping () -> Void) {
 	var completionHandlers: [() -> Void] = []
@@ -21,7 +21,7 @@ func storeEscapingClosureToAnArray(completionHandler: @escaping () -> Void) {
 }
 ```
 
-2. Store the closure to a property of another project
+* Store the closure to a property of another project
 ```
 func storeEscapingClosureToAPropertyOfAnotherObject(completionHandler: @escaping () -> Void) {
     let another = AnotherClass()
@@ -29,7 +29,7 @@ func storeEscapingClosureToAPropertyOfAnotherObject(completionHandler: @escaping
 }
 ```
 
-3. Store the closure to anothe variable
+* Store the closure to anothe variable
 ```
 func storeEscapingClosureToAnotherVariable(completionHandler: @escaping () -> Void) {
     let justAnotherVariable = completionHandler
@@ -37,7 +37,7 @@ func storeEscapingClosureToAnotherVariable(completionHandler: @escaping () -> Vo
 }
 ```
 
-4. Pass the closure and call another function whose parameter is `@escaping`. 
+* Pass the closure and call another function whose parameter is `@escaping`. 
 ```
 func callAnotherFunctionWithEscapingClosureParameters(completionHandler handler: @escaping () -> Void) {
     functionWithEscapingClosureForSomeReason(completionHandler: handler)
