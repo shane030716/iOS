@@ -2,7 +2,6 @@
 
 import UIKit
 
-
 class EscapingClosureTestingClass {
     var x = 10
 
