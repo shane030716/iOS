@@ -57,6 +57,8 @@ String doesn't automatically bridges to NSString anymore.
 
 String is now a struct, while NSString is still a class.
 
+### NSCache
+
 ### Some names are neater.
 `UIColor.blue` instead of `UIColor.blueColor()`
 
@@ -70,7 +72,7 @@ Most old objective-C "NS" classes got rid of the "NS".
 * `NSURLRequest` -> `URLRequest` (struct)
 * `NSURLSession` -> `URLSession` (struct)
 and more..
-
+But not NSCache????.....
 
 ### Compile Error: command failed due to signal abort trap: 6
 After fixing all the other compile errors, there was this final one **command failed due to signal abort trap: 6**.
