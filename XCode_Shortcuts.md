@@ -11,16 +11,21 @@ First here are the symbols for some keys
 * Fn
 
 ### Nagivation Panel
-Toggle: ⌘+0
-Specific navigators: ⌘+[1-8]
+* Toggle: ⌘+0
+* Specific navigators: ⌘+[1-8]
 
 ### Utilities Panel
-Toggle: ⌘+⌥+0
-Specific tabs in the Utilities panel: ⌘+⌥+[1-6]
+* Toggle: ⌘+⌥+0
+* Specific tabs in the Utilities panel: ⌘+⌥+[1-6]
 
 ### Debug Area
-Toggle: ⌘+⇧+Y
+* Toggle: ⌘+⇧+Y
 
 ### Editors
-Assistant Editor: ⌘+⌥+Enter
-Standard Editor: ⌘+Enter
+* Assistant Editor: ⌘+⌥+Enter
+* Standard Editor: ⌘+Enter
+
+### Open a file
+* Open a file: ⌘+⇧+O (Letter O)
+* Hit Enter to open the file in the Standard Editor
+* Hit ⌥+Enter to open the file in the Assistant Editor
