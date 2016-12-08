@@ -3,12 +3,12 @@
 ### Symbols for some keys
 First here are the symbols for some keys
 
-## Command ⌘
-## Shift ⇧
-## Option ⌥
-## Control ⌃
-## Caps Lock ⇪
-## Fn
+* Command ⌘
+* Shift ⇧
+* Option ⌥
+* Control ⌃
+* Caps Lock ⇪
+* Fn
 
 ### Nagivation Panel
 Toggle: ⌘+0
